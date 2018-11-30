@@ -1,0 +1,78 @@
+<! DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE>MEMO</TITLE>
+<META CHARSET="UTF-8">
+</HEAD>
+<BODY>
+<H1>HTML</H1>
+기본적인 HTML의 틀은 !DOCTYPE HTML, HTML, 으로 시작한다 그리고 책으로따지면 표지에 해당하는 부분을 HEAD 태그로 감싼다.<BR>HEAD 태그안의 내용중 TITLE 태그는 제목을 나타내고
+META CHARSET="UTF-8"이라는 태그는 컴퓨터로 하여금 UFT-8로 인식하라는 명령을 나타내주는 태그이다<BR>그리고 책의내용에 해당하는 부분은 BODY 태그로 감싸야한다 이게 가장 기본적인
+틀이다.
+<H2>PARAGRAPH</H2>
+문단을 나타내주는 태그는 BR과 P가 있다 쉽게말해서 BR은 스페이스바 같은 느낌이라면 P는 말그대로 문단과 문단을 구분해주는 태그이다 그래서 BR태그는 닫을필요가 없으나<BR>
+P태그는 꼭닫아줄 필요성이 있다.
+<H2>STRONG,U,H</H2>
+본문의 내용에서 강조하고싶은 부분이있을때에는 STRONG 태그를 사용하면<STRONG>이렇게</STRONG>강조가 되고 U태그는<U>밑줄</U>을 그어주는 역할을 한다 그리고<BR>
+Hn태그는 부제같은 느낌인데 n의자리에 1-6까지의 숫자가 오게되고 숫자가 커질수록 크기는 작아진다!
+<H2>LIST,LINK,IMAGE</H2>
+LIST를 만들고싶을때에는 LI라는 태그를 만들면 된다 단! 주의할점이 한가지있다 LI는 하위태그의 개념으로서 항상 상위태그인 OL혹은 UL태그로 감싸져야한다<BR>
+그렇다면 UL태그와 OL태그의 차이점은 무엇일까 우선UL은 UNORDERED LIST 즉 순서가없는 말그대로 리스트의 나열인 반면에 OL태그는 ORDERED LIST의 약자로 순서가 매겨진 리스트이다.<BR>
+LINK 는 A라는 태그로 이루어져있다 A 태그 안의 HREF="주소"는 링크의 주소이고 TARGET="_BLANK"는 새로운창에 링크주소를 띄우는것 그리고 TITLE="미리보기"는 미리보기를 의미한다<BR>
+IMAGE 를 삽입하고 싶을때의 태그는 IMG 혹은 IMAGE이다 그리고 SRC즉 SOURCE로 설명해준다WIDTH는 크기를 의미한다.<BR>
+<IMG SRC="https://www.gettingsmart.com/wp-content/uploads/2017/06/Program-Code-Feature-Image.jpg"WIDTH="10%">
+<UL>
+<LI><A HREF="https://www.google.co.kr/search?q=RONALDO&oq=RONALDO&aqs=chrome..69i57j69i60l3j0l2.1727j0j4&sourceid=chrome&ie=UTF-8" TARGET="_BLANK"TITLE="우리형">RONALDO</A></LI>
+<LI>MESSI</LI>
+<LI>MODRIC</LI>
+</UL>
+<OL>
+<LI>RONALDO</LI>
+<LI>MESSI</LI>
+<LI>MODRIC</LI>
+</OL>
+<H2>SERVER</H2>
+기존의 에디터로 HTML파일을 생산하면 그것은 파일의 형식으로서 다른 사람이 나의 HTML파일을 볼수가 없다. 따라서 이럴때 필요한것이 SERVER인데 SERVER를 만드는법은<BR>
+1.<STRONG>내가 직접만들거나</STRONG>2.<STRONG>서버를 만드는회사의 도움을받는것</STRONG>두가지가 있다.<BR>
+1번의경우에는 BITNAMI라는 프로그램을 사용하면되고 2번의경우에는<A HREF="https://github.com/" TARGET="_BLANK">GITHUB</A>라는 사이트에서 등록을하면된다.<BR>
+<H2>VIDEO,COMMENT,CHAT</H2>
+VIDEO 같은 경우에는 정말 간단하다.<br>
+예를 들어서 YOUTUBE의 동영상을 가져오고싶다면 그냥 마음에드는 영상의 소스를 붙여넣으면 끝!참고로 태그는 IFRAME 이다.<BR>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F9GujgK0y2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<BR><BR>이번에는 사이트에 댓글기능을 추가해보자<A HREF="https://disqus.com/"TARGET="_BLANK">DISQUS</A>라는 사이트를 이용하면된다.<BR>
+단 주의할점은 서버에 등록이 되어있어야지 사용가능하다는 점이다!.<BR>
+<BR>CHAT같은경우에는<A HREF="https://www.tawk.to" TARGET="_BLANK"> TAWK</A>라는 사이트에서 이용할수있다.
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5bfe378679ed6453ccab79fa/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+  <div id="disqus_thread"></div>
+  <script>
+
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://coding-practice-1.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</BODY>
